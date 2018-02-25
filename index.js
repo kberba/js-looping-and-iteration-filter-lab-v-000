@@ -8,7 +8,7 @@ function findMatching(drivers, string) {
   //   }
   // }
   // return matchDriverList;
-  return drivers.filter(driver => driver.toUpperCase() === string.toUpperase());
+  return drivers.filter(driver => driver.toUpperCase() === string.toUpperCase());
 }
 
 function fuzzyMatch(drivers, string) {
