@@ -20,6 +20,13 @@ function fuzzyMatch(drivers, string) {
   return matchDriverList;
 }
 
+
 function matchName(drivers, string) {
-  drivers.filter(function (string) { return })
+  let matchDriverName = [];
+  for (const d of drivers) {
+    if (d === string) {
+      matchDriverName.push(d);
+    }
+  }
+  return matchDriverName;
 }
