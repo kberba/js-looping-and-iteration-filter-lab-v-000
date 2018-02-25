@@ -23,7 +23,7 @@ function fuzzyMatch(drivers, string) {
 
 function matchName(drivers, string) {
   let matchDriverName = [];
-  for (let d in drivers) {
+  for (const d of drivers) {
     if (d[0] === string) {
       matchDriverName.push(d[0]);
     }
