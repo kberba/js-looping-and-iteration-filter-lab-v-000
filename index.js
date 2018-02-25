@@ -11,13 +11,14 @@ function findMatching(drivers, string) {
 }
 
 function fuzzyMatch(drivers, string) {
-  let matchDriverList = [];
-  for (const d of drivers) {
-    if (d.substring(0, 2) === string.substring(0, 2)) {
-      matchDriverList.push(d);
-    }
-  }
-  return matchDriverList;
+  // let matchDriverList = [];
+  // for (const d of drivers) {
+  //   if (d.substring(0, 2) === string.substring(0, 2)) {
+  //     matchDriverList.push(d);
+  //   }
+  // }
+  // return matchDriverList;
+  return drivers.filter(driver => d.substring(0, 2) === string.substring(0, 2));
 }
 
 
